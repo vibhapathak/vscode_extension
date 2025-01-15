@@ -1,0 +1,65 @@
+{
+  "name": "boilerplate-generator",
+  "displayName": "Boilerplate Generator",
+  "description": "Generate multiple template files with boilerplate code",
+  "version": "0.0.1",
+  "publisher": "YOUR-PUBLISHER-NAME",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "template",
+    "boilerplate",
+    "react",
+    "javascript",
+    "html"
+  ],
+  "icon": "images/image.jpg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/YOUR-REPO"
+  },
+  "license": "MIT",
+  "activationEvents": [
+    "onStartupFinished",
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createTemplateFile",
+        "title": "Create Template File",
+        "category": "Template Generator"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.createTemplateFile",
+          "group": "2_workspace"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "extension.createTemplateFile"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^16.x.x",
+    "@types/vscode": "^1.60.0",
+    "@vscode/vsce": "^3.2.1",
+    "typescript": "^4.x.x"
+  }
+}
