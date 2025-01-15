@@ -20,7 +20,7 @@
   "icon": "images/image.jpg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-USERNAME/YOUR-REPO"
+    "url": "https://github.com/vibhapathak/vscode_extension"
   },
   "license": "MIT",
   "activationEvents": [
